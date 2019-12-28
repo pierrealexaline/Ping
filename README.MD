@@ -4,9 +4,7 @@ A simple class to Ping a distant url with PHP.
 
 ## Required : 
 
-php 7 + Curl pre-installed
-Tested on Ubuntu 16.04 ->19.10
-
+php 7 + Curl pre-installed  
 
 ## Example / usage
         require('Ping.php');
