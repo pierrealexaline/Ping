@@ -16,9 +16,9 @@ class Ping
 
     public function getPing(string $site, int $timeout)
     { 
-        $timeBegin = microtime(); 
+        $timeBegin = microtime(1); 
         $this->pingR['httpCode'] = shell_exec('timeout=' . $timeout . ' curl -so /dev/null -w "%{http_code}" ' .$site . ' &');
-        $this->pingR['microtime'] = microtime() - $timeBegin; 
+        $this->pingR['microtime'] = microtime(1) - $timeBegin; 
         return $this->pingR;
     }
 
